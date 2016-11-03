@@ -4,7 +4,8 @@
   <head>
 
     <title>Paul Rose - Freelance Web Developer</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/43d8e3ed83.js"></script>
@@ -40,11 +41,11 @@
           <p class="contact-title">Contact & Connect with me:</p>
           <p class="contact-email"><a href="paul@paulrose.com" class="fancy-underline">paul@paulrose.com</a></p>
           <ul class="contact-social">
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
-            <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+            <li><a href="https://instagram.com/_paulrose"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/_paulrose"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/paulrose2"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/paulrose"><i class="fa fa-github"></i></a></li>
+            <li><a href="#" onclick="showSnapchat();"><i class="fa fa-snapchat"></i></a></li>
           </ul>
         </div>
       </div>
@@ -52,6 +53,24 @@
       <div class="side-images"></div>
 
     </div>
+
+    <div id="overlay" class="overlay" onclick="hideSnapchat()">
+      <div>
+        <img src="./assets/img/snapcodes.png">
+        <p>Click/tap to close</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      showSnapchat = function() {
+        document.getElementById('overlay').style.display = 'flex';
+        return false
+      }
+      hideSnapchat = function() {
+        document.getElementById('overlay').style.display = 'none';
+        return false
+      }
+    </script>
 
   </body>
 </html>
