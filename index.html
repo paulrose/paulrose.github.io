@@ -45,7 +45,7 @@
             <li><a href="https://twitter.com/_paulrose"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://uk.linkedin.com/in/paulrose2"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://github.com/paulrose"><i class="fa fa-github"></i></a></li>
-            <li><a href="#" onclick="showSnapchat();"><i class="fa fa-snapchat"></i></a></li>
+            <li><a href="#" onclick="showSnapchat(); return false;"><i class="fa fa-snapchat"></i></a></li>
           </ul>
         </div>
       </div>
@@ -54,7 +54,7 @@
 
     </div>
 
-    <div id="overlay" class="overlay" onclick="hideSnapchat()">
+    <div id="overlay" class="overlay" onclick="hideSnapchat(); return false;">
       <div>
         <img src="./assets/img/snapcodes.png">
         <p>Click/tap to close</p>
@@ -64,11 +64,9 @@
     <script type="text/javascript">
       showSnapchat = function() {
         document.getElementById('overlay').style.display = 'flex';
-        return false
       }
       hideSnapchat = function() {
         document.getElementById('overlay').style.display = 'none';
-        return false
       }
     </script>
 
